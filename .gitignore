@@ -1,0 +1,13 @@
+# Parcel files
+.cache/
+dist
+
+# Dependency directories
+node_modules/
+
+# Mac files
+.DS_Store
+
+# dotenv environment variables file
+.env
+.env.*
