@@ -1,8 +1,8 @@
 {
-  "name": "muji",
+  "name": "website-framework",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/toshifumiimanishi/muji.git",
+  "repository": "https://github.com/toshifumiimanishi/website-framework.git",
   "author": "Imanishi Toshifumi <toshifumi.imanishi@un-t.com>",
   "license": "MIT",
   "scripts": {
