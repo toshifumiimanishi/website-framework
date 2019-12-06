@@ -1,14 +1,7 @@
 @charset "UTF-8";
 
+@import "_partials/variables";
+@import "_partials/functions";
+@import "_partials/mixins";
 @import "_partials/foundation/reset";
-
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
+@import "_partials/foundation/base";
