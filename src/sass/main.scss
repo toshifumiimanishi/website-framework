@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import "_partials/variables";
-@import "_partials/functions";
-@import "_partials/mixins";
-@import "_partials/foundation/reset";
-@import "_partials/foundation/base";
+@use "_partials/foundation/reset";
+@use "_partials/foundation/base";
+@use "_partials/projects/button";

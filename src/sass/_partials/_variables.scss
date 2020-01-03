@@ -40,3 +40,27 @@ $breakpoints: (
   md: 768px,
   lg: 1280px
 ) !default;
+
+$color-white: #fff !default;
+$color-gray: #ccc !default;
+$color-black: #333 !default;
+$color-red: #d24d57 !default;
+$color-blue: #007bff !default;
+
+$btn-background-color: $color-gray !default;
+$btn-border-width: 2px !default;
+$btn-padding-x: 0.3em !default;
+$btn-padding-y: 0.5em !default;
+$btn-color: $color-black !default;
+$btn-font-size: 1.4rem !default;
+$btn-line-height: 1.4 !default;
+
+$btn-primary-background-color: $color-red !default;
+
+$btn-secondary-background-color: $color-blue !default;
+
+$btn-disabled-background-color: $color-gray !default;
+$btn-disabled-color: $color-white !default;
+
+$btn-outline-primary-color: $color-red !default;
+$btn-outline-secondary-color: $color-blue !default;
