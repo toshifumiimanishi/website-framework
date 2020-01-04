@@ -7,12 +7,22 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@storybook/html": "^5.2.8",
+    "@storybook/preset-scss": "^1.0.2",
     "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.1",
     "parcel-bundler": "^1.12.4",
     "postcss-modules": "^1.4.1",
-    "sass": "^1.23.7"
-  }
+    "sass": "^1.23.7",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2"
+  },
+  "dependencies": {}
 }
