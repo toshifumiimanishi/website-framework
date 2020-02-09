@@ -23,3 +23,9 @@ storiesOf('Components', module)
     <button class="p-btn" type="button" disabled>DISABLED</button>
     <a class="p-btn -outline" href="">OUTLINE</a>
   `)
+  .add('formLabel', () => `
+    <div class="p-floatlabel">
+      <input class="c-textfield p-floatlabel_textfield" type="text">
+      <label class="p-floatlabel_placeholder">メールアドレスまたは携帯電話番号</label>
+    </div>
+  `)
