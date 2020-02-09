@@ -1,0 +1,28 @@
+@use "../api" as *;
+
+.p-floatlabel {
+  position: relative;
+}
+
+.p-floatlabel_textfield {
+  padding: $floatlabel-textfield-padding;
+}
+
+.p-floatlabel_placeholder {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: $floatlabel-placeholder-color;
+  font-size: 1rem;
+  transform: translateY(-50%);
+  transition-property: font-size, top;
+  transition-duration: $base-transition-duration;
+  transition-timing-function: $base-transition-timing-function;
+  pointer-events: none;
+
+  .p-floatlabel_textfield:focus ~ & {
+    top: 0;
+    transform: none;
+    font-size: 0.8rem;
+  }
+}
