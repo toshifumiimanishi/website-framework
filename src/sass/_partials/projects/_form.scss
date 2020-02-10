@@ -5,7 +5,10 @@
 }
 
 .p-floatlabel_textfield {
+  z-index: 1;
+  position: relative;
   padding: $floatlabel-textfield-padding;
+  background: none;
 }
 
 .p-floatlabel_placeholder {
@@ -20,7 +23,8 @@
   transition-timing-function: $base-transition-timing-function;
   pointer-events: none;
 
-  .p-floatlabel_textfield:focus ~ & {
+  .p-floatlabel_textfield:focus ~ &,
+  .p-floatlabel_textfield:valid ~ & {
     top: 0;
     transform: none;
     font-size: 0.8rem;
