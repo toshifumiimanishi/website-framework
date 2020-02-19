@@ -1,4 +1,4 @@
 import '../sass/main.scss';
 import { revealPassword } from './modules/form';
 
-revealPassword();
+window.addEventListener('DOMContentLoaded', revealPassword);
