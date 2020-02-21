@@ -7,11 +7,8 @@ export default {
 
 export const button = () => {
   const elements = `
-    <div class="p-btn">DEFAULT</div>
-    <a class="p-btn -primary" href="">PRIMARY</a>
-    <button class="p-btn -secondary" type="button">SECONDARY</button>
-    <button class="p-btn" type="button" disabled>DISABLED</button>
-    <a class="p-btn -outline" href="">OUTLINE</a>
+    <a class="p-ghostbtn" href="">DEFAULT</a>
+    <button class="p-ghostbtn" type="button" disabled>DISABLED</button>
   `;
   return elements;
 };
