@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-@use "_partials/foundation/reset";
-@use "_partials/foundation/base";
-@use "_partials/components/form";
+@use "_partials/foundation";
+@use "_partials/components";
 @use "_partials/projects";
