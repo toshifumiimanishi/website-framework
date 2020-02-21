@@ -4,37 +4,22 @@
   display: inline-flex;
   align-items: center;
   background-color: $btn-background-color;
-  border: $btn-border-width solid transparent;
-  padding: $btn-padding-x $btn-padding-x;
+  padding: $btn-padding-y $btn-padding-x;
   color: $btn-color;
   font-size: $btn-font-size;
   font-weight: bold;
   line-height: $btn-line-height;
   text-decoration: none;
+}
 
-  &.-primary {
-    background-color: $btn-primary-background-color;
-  }
+.p-ghostbtn {
+  @extend .p-btn;
+  background-color: transparent;
+  border: $ghostbtn-border-width solid currentcolor;
 
-  &.-secondary {
-    background-color: $btn-secondary-background-color;
-  }
-  
-  &.-outline {
-    border-color: currentcolor;
-    background-color: transparent;
-
-    &.-primary {
-      color: $btn-outline-primary-color;
-    }
-  
-    &.-secondary {
-      color: $btn-outline-secondary-color;
-    }
-  }
-  
   &[disabled] {
-    background-color: $btn-disabled-background-color;
-    color: $btn-disabled-color;
+    background-color: $ghostbtn-disabled-background-color;
+    color: $ghostbtn-disabled-color;
+    border-color: $ghostbtn-disabled-border-color;
   }
 }
