@@ -14,6 +14,26 @@ export const ghostButton = () => {
   return elements;
 };
 
+export const card = () => {
+  const element =`
+  <div class="p-card">
+    <div class="p-card_header"><img src="https://fakeimg.pl/300x200/282828/eae0d0/?retina=1&text=Dummy Image"></div>
+    <div class="p-card_body">
+      <div class="p-card_tit"><a class="p-card_link" href="">Card title</a></div>
+      <div class="p-card_txt">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+      <small>Last updated 3 mins ago</small>
+    </div>
+  </div>
+  `;
+  return element;
+};
+
+card.story = {
+  parameters: {
+    notes: 'Flexbox の設計は、各カードのコンテンツ量に依存しない高さ（=高さ合わせ）を可能にします。カード全体をクリッカブルにする場合、スクリーンリーダーの冗長な読み上げを避けるため、擬似要素でカード全体をクリッカブルにする方法を推奨します。'
+  }
+}
+
 export const form = () => {
   const element = `
     <div class="p-floatlabel">
