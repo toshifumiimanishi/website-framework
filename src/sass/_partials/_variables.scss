@@ -101,3 +101,9 @@ $spinner-animation-duration: 1s !default;
 
 // Loader
 $loader-backdrop-background-color: $color-black;
+
+// Modal
+$modal-offset-x: 20px;
+$modal-offset-top: 64px;
+$modal-dialog-background-color: $color-white !default;
+$modal-backdrop-background-color: $color-black !default;
