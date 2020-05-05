@@ -71,9 +71,13 @@ $btn-disabled-color: $color-white !default;
 
 // Ghost Button
 $ghostbtn-border-width: 2px !default;
-$ghostbtn-disabled-color: $btn-disabled-color !default;
-$ghostbtn-disabled-border-color: $gray-500 !default;
-$ghostbtn-disabled-background-color: $btn-disabled-background-color !default;
+$ghostbtn-hover-border-color: $color-black !default;
+$ghostbtn-hover-background-color: $color-black !default;
+$ghostbtn-hover-color: $color-white !default;
+$ghostbtn-primary-color: $color-blue !default;
+$ghostbtn-primary-hover-border-color: $color-blue !default;
+$ghostbtn-primary-hover-background-color: $color-blue !default;
+$ghostbtn-primary-hover-color: $color-white !default;
 
 // Float Label
 $floatlabel-placeholder-color: $gray-600 !default;

@@ -10,16 +10,33 @@
   font-weight: bold;
   line-height: $btn-line-height;
   text-decoration: none;
+  transition-property: border-color, background-color, color;
+  transition-duration: $base-transition-duration;
+  transition-timing-function: $base-transition-timing-function;
 }
 
 .p-ghostbtn {
   @extend .p-btn;
   background-color: transparent;
   border: $ghostbtn-border-width solid currentcolor;
+  
+  &:not([disabled]):hover {
+    border-color: $ghostbtn-hover-border-color;
+    background-color: $ghostbtn-hover-background-color;
+    color: $ghostbtn-hover-color;
+  }
+  
+  &.-primary {
+    color: $ghostbtn-primary-color;
+
+    &:hover {
+      border-color: $ghostbtn-primary-hover-border-color;
+      background-color: $ghostbtn-primary-hover-background-color;
+      color: $ghostbtn-primary-hover-color;
+    }
+  }
 
   &[disabled] {
-    background-color: $ghostbtn-disabled-background-color;
-    color: $ghostbtn-disabled-color;
-    border-color: $ghostbtn-disabled-border-color;
+    opacity: 0.4;
   }
 }
