@@ -45,3 +45,10 @@ export const form = () => {
   `;
   return element;
 };
+
+export const spinner = () => {
+  const element = `
+    <div class="c-spinner" aria-busy="true"></div>
+  `;
+  return element;
+};
