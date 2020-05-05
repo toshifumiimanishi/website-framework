@@ -52,3 +52,12 @@ export const spinner = () => {
   `;
   return element;
 };
+
+export const loader = () => {
+  const element = `
+    <div class="p-loader" aria-hidden="false">
+      <div class="c-spinner p-loader_spinner" aria-busy="true"></div>
+    </div>
+  `;
+  return element;
+};

@@ -1,0 +1,32 @@
+@use "../api" as *;
+
+.p-loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-loader;
+  background-color: $loader-backdrop-background-color;
+  opacity: 1;
+  transition-property: opacity, visibility;
+  transition-duration: $base-transition-duration;
+  transition-timing-function: $base-transition-timing-function;
+
+  &[aria-hidden="true"] {
+    opacity: 0;
+  }
+
+  &[aria-hidden="true"] {
+    visibility: hidden;
+  }
+}
+
+.p-loader_spinner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}

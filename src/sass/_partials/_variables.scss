@@ -29,6 +29,16 @@ $easeInOutExpo: cubic-bezier(1, 0, 0, 1) !default;
 $easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86) !default;
 $easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55) !default;
 
+// z-index
+$zindex-overlay: 1000 !default;
+$zindex-tooltip: 1001 !default;
+$zindex-carousel: 1002 !default;
+$zindex-dropdown: 1003 !default;
+$zindex-sticky: 1004 !default;
+$zindex-drawer: 1005 !default;
+$zindex-modal: 1006 !default;
+$zindex-loader: 1007 !default;
+
 $root-font-sizes: (
   sm: 3.125vw,
   md: 10px,
@@ -88,3 +98,6 @@ $spinner-size: 40px;
 $spinner-border-width: 4px;
 $spinner-border-color: $color-red !default;
 $spinner-animation-duration: 1s !default;
+
+// Loader
+$loader-backdrop-background-color: $color-black;
