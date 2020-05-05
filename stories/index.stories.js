@@ -55,8 +55,8 @@ export const spinner = () => {
 
 export const loader = () => {
   const element = `
-    <div class="p-loader" aria-hidden="false">
-      <div class="c-spinner p-loader_spinner" aria-busy="true"></div>
+    <div class="p-loader js-loader" data-target=".p-loader_spinner" aria-hidden="false">
+      <div class="c-spinner p-loader_spinner" aria-busy="true"><span class="visually-hidden">Loading...</span></div>
     </div>
   `;
   return element;
