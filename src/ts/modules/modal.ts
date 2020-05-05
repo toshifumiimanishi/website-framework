@@ -1,4 +1,4 @@
-const modal = (function () {
+export const modal = (function () {
   const toggleButton = document.querySelectorAll('.js-toggle-modal');
   let currentScrollY = 0;
 

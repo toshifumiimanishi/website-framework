@@ -87,3 +87,18 @@ modal.story = {
     notes: 'モーダルは HTML、CSS、および JavaScript で構築されています。モーダルの発火には `.js-toggle-modal` を追加し、`data-target` でモーダルのターゲットを設定します。'
   }
 }
+
+export const drawer = () => {
+  const element = `
+    <div class="p-drawer" id="drawer" aria-hidden="false">
+      <div class="p-drawer_backdrop js-drawer-dismiss"></div>
+      <nav class="p-drawer_nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  `;
+  return element;
+};
