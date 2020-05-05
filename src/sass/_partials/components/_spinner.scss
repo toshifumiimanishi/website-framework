@@ -1,0 +1,17 @@
+@use "../api" as *;
+
+.c-spinner {
+  width: $spinner-size;
+  height: $spinner-size;
+  border: $spinner-border-width solid $spinner-border-color;
+  border-right-color: transparent;
+  border-radius: 50%;
+
+  &[aria-busy="true"] {
+    animation: spin $spinner-animation-duration infinite linear;
+  }
+
+  &[aria-busy="false"] {
+    visibility: hidden;
+  }
+}

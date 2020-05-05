@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "@storybook/addon-notes": "^5.3.18",
     "@storybook/html": "^5.3.13",
     "@storybook/preset-scss": "^1.0.2",
     "@storybook/preset-typescript": "^1.2.0",
