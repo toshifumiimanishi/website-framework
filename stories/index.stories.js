@@ -5,6 +5,14 @@ export default {
   title: 'Components',
 };
 
+export const button = () => {
+  const elements = `
+    <a class="p-btn" href="">With a element</a>
+    <button class="p-btn" type="button">With button element</button>
+  `;
+  return elements;
+};
+
 export const ghostButton = () => {
   const elements = `
     <a class="p-ghostbtn" href="">Default</a>

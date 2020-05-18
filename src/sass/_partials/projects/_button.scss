@@ -4,6 +4,7 @@
   display: inline-flex;
   align-items: center;
   background-color: $btn-background-color;
+  border-radius: $base-border-radius;
   padding: $btn-padding-y $btn-padding-x;
   color: $btn-color;
   font-size: $btn-font-size;
@@ -13,12 +14,24 @@
   transition-property: border-color, background-color, color;
   transition-duration: $base-transition-duration;
   transition-timing-function: $base-transition-timing-function;
+
+  &:not([disabled]):hover {
+    background-color: scale-color($btn-background-color, $lightness: 80%);
+  }
+  
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 $base-outline-width scale-color($base-outline-color, $lightness: -40%);
+  }
 }
 
 .p-ghostbtn {
   @extend .p-btn;
   background-color: transparent;
   border: $ghostbtn-border-width solid currentcolor;
+  border-radius: 0;
+  color: $ghostbtn-color;
   
   &:not([disabled]):hover {
     border-color: $ghostbtn-hover-border-color;
