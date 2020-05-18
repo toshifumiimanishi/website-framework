@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "docs:dev": "start-storybook -p 6006",
+    "docs:build": "build-storybook -o docs"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
