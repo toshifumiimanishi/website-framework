@@ -7,8 +7,36 @@ export default {
 
 export const button = () => {
   const elements = `
-    <a class="p-btn" href="">With a element</a>
-    <button class="p-btn" type="button">With button element</button>
+    <a class="p-btn" href="">Use a element</a>
+    <button class="p-btn" type="button">Use button element</button>
+    <a class="p-btn" href="">
+      <svg class="c-icon p-btn_icon -start" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+      </svg>
+      Use a element with icon
+    </a>
+    <button class="p-btn" type="button">
+      Use button element with icon
+      <svg class="c-icon p-btn_icon -end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+      </svg>
+    </button>
+  `;
+  return elements;
+};
+
+export const iconButton = () => {
+  const elements = `
+    <a class="p-iconbtn" href="">
+      <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+      </svg>
+    </a>
+    <button class="p-iconbtn" type="button">
+      <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+      </svg>
+    </button>
   `;
   return elements;
 };

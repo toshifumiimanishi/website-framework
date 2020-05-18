@@ -26,6 +26,22 @@
   }
 }
 
+.p-btn_icon {
+  &.-start {
+    margin-right: 0.5em;
+  }
+  
+  &.-end {
+    margin-left: 0.5em;
+  }
+}
+
+.p-iconbtn {
+  @extend .p-btn;
+  border-radius: 50%;
+  padding: $iconbtn-padding;
+}
+
 .p-ghostbtn {
   @extend .p-btn;
   background-color: transparent;
