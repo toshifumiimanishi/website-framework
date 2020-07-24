@@ -108,8 +108,8 @@ export const modal = () => {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet necessitatibus, rem quae sint cupiditate
               qui reprehenderit nostrum hic repellendus cum quia corporis rerum fugit! Natus illum eius odio maiores
               vero.</p>
-            <button class="p-modal_btn p-btn" type="button" data-dismiss="modal" aria-label="close">Close</button>
-            <button class="p-modal_btn -floating" type="button" data-dismiss="modal" aria-label="close">×</button>
+            <button class="p-modal_btn p-btn" type="button" data-dismiss="modal" aria-label="close">Dismiss</button>
+            <button class="p-modal_btn -floating" type="button" data-dismiss="modal" aria-label="dismiss">×</button>
           </div>
         </div>
       </div>

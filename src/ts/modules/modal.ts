@@ -1,12 +1,20 @@
-export const modal = (function () {
-  const toggleButton = document.querySelectorAll('.js-toggle-modal');
+export const modal = () => {
+  const toggleButton = document.querySelectorAll<HTMLElement>('.js-toggle-modal');
   let currentScrollY = 0;
 
-  toggleButton.forEach((element: HTMLElement) => {
-    const target = document.querySelector(element.dataset.target);
+  toggleButton.forEach((element) => {
+    if (!element.dataset.target) {
+      throw new Error('データ属性 `data-target` を指定してください。');
+    }
+    
+    const target = document.querySelector(element.dataset.target) as HTMLElement;
     const dialog = target.querySelector('[role="document"]');
     const dismissButton = target.querySelectorAll('[data-dismiss="modal"]');
 
+    if (!dialog) {
+      throw new Error('role 属性 `role="document"` を指定してください。');
+    }
+    
     element.addEventListener('click', () => {
       _launch(target);
     });
@@ -33,12 +41,12 @@ export const modal = (function () {
       }
     });
 
-    function _launch(element) {
+    function _launch(element: HTMLElement) {
       _activateScrollLock();
       element.setAttribute('aria-hidden', 'false');
     }
 
-    function _dismiss(element) {
+    function _dismiss(element: HTMLElement) {
       _deactivateScrollLock();
       element.setAttribute('aria-hidden', 'true');
     }
@@ -59,4 +67,4 @@ export const modal = (function () {
       window.scrollTo(0, currentScrollY);
     }
   });
-})();
+};
