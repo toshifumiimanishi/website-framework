@@ -9,7 +9,8 @@
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "docs:dev": "start-storybook -p 6006",
-    "docs:build": "build-storybook -o docs"
+    "docs:build": "build-storybook -o docs",
+    "format:html": "prettier --write 'src/**/*.html'"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -25,6 +26,7 @@
     "fork-ts-checker-webpack-plugin": "^4.0.4",
     "parcel-bundler": "^1.12.4",
     "postcss-modules": "^1.4.1",
+    "prettier": "^2.0.5",
     "react-docgen-typescript-loader": "^3.6.0",
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
