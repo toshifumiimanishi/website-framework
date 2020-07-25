@@ -1,9 +1,13 @@
 export const drawer = (() => {
   const toggle = document.querySelector('.js-drawer');
   const dismiss = document.querySelector('.js-drawer-dismiss');
-  const target = toggle.getAttribute('aria-controls');
+  const target = toggle?.getAttribute('aria-controls');
   const drawer = document.querySelector(`#${target}`);
-  let isExpanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+  let isExpanded = toggle?.getAttribute('aria-expanded') === 'true' || false;
+
+  if (!toggle) throw new Error('class 属性 `js-drawer` を指定してください。');
+  if (!dismiss) throw new Error('class 属性 `js-drawer-dismiss` を指定してください。');
+  if (!drawer) throw new Error('aria-controls 属性にターゲットを指定してください。もしくは、ターゲットが見つかりません。');
 
   const _init = () => {
     _handle();
