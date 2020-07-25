@@ -126,12 +126,13 @@ modal.story = {
 
 export const drawer = () => {
   const element = `
-    <div class="p-drawer" id="drawer" aria-hidden="false">
+    <button class="p-drawer js-drawer" type="button" aria-controls="drawer" aria-expanded="false">CLICK ME</button>
+    <div class="p-drawer" id="drawer" aria-hidden="true">
       <div class="p-drawer_backdrop js-drawer-dismiss"></div>
       <nav class="p-drawer_nav">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Settings</a></li>
+        <ul class="p-drawer_list">
+          <li class="p-drawer_item"><a aria-current="page">Home</a></li>
+          <li class="p-drawer_item"><a href="">Settings</a></li>
         </ul>
       </nav>
     </div>
