@@ -10,7 +10,7 @@
   padding: 0 $modal-offset-x;
   overflow-y: auto;
   background-color: rgba($modal-backdrop-background-color, 0.7);
-  transition: all 0.3s ease;
+  transition: all $base-transition-duration $base-transition-timing-function;
 
   &[aria-hidden="true"] {
     visibility: hidden;
@@ -23,7 +23,7 @@
   align-items: center;
   min-height: 100%;
 
-  // 以下、IE11 ハック
+  // CSS Hacks for Internet Explorer 11
   _:-ms-lang(x)::-ms-backdrop,
   & {
     min-height: 100vh;
