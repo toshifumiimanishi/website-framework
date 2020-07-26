@@ -1,10 +1,22 @@
 export const sticky = () => {
-  const stickyTarget = document.querySelector('.js-sticky') as HTMLElement;
+  const stickyOriginal = document.querySelector('.js-sticky') as HTMLElement;
 
-  if (!stickyTarget) throw new Error('class 属性 `js-sticky` を指定してください。');
+  if (!stickyOriginal) throw new Error('class 属性 `js-sticky` を指定してください。');
 
-  const stickyTargetPosY = getAbsolutePosY(stickyTarget);
+  const stickyClone = generateClone(stickyOriginal);
+  const stickyTargetPosY = getAbsolutePosY(stickyOriginal);
+  const offset = 0;
+  const threshold = stickyTargetPosY + offset;
   let isFixed = false;
+
+  document.body.append(stickyClone);
+
+  function generateClone(originalElement: HTMLElement) {
+    const cloneElement = originalElement.cloneNode(true) as HTMLElement;
+    cloneElement.classList.add('-clone');
+
+    return cloneElement;
+  }
 
   // 現在のスクロール量（ Y 方向）を取得する
   function getScrollY() {
@@ -22,7 +34,7 @@ export const sticky = () => {
     if (!isFixed) {
       return;
     }
-    stickyTarget.removeAttribute('style');
+    stickyClone.removeAttribute('style');
     isFixed = false;
   }
 
@@ -30,15 +42,17 @@ export const sticky = () => {
     if (isFixed) {
       return;
     }
-    stickyTarget.style.position = 'fixed';
-    stickyTarget.style.top = '0';
-    stickyTarget.style.left = '0';
+    stickyClone.style.position = 'fixed';
+    stickyClone.style.top = '0';
+    stickyClone.style.right = '0';
+    stickyClone.style.left = '0';
+    stickyClone.style.willChange = 'transform, opacity';
     isFixed = true;
   }
 
   function onScroll() {
     const currentScrollY = getScrollY();
-    if (currentScrollY < stickyTargetPosY) {
+    if (currentScrollY < threshold) {
       unfixed();
     } else {
       fixed();
