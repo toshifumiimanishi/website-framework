@@ -5,6 +5,16 @@ export default {
   title: 'Components',
 };
 
+export const accordio = () => {
+  const elements = `
+    <div class="p-accordion js-according">
+      <button class="p-accordion_btn js-accordion-btn" type="button" aria-expanded="false" aria-controls="collapse-example">Accordion example</button>
+      <div class="p-accordion_panel" id="collapse-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius iusto nobis dolorum, alias nostrum deserunt non deleniti consectetur eaque necessitatibus repellendus maxime sequi adipisci. Molestiae saepe sunt amet. Expedita.</div>
+    </div>
+  `;
+  return elements;
+};
+
 export const button = () => {
   const elements = `
     <a class="p-btn" href="">Use a element</a>

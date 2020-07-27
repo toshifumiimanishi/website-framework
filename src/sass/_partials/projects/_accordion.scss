@@ -1,0 +1,8 @@
+.p-accordion {
+  overflow: hidden;
+}
+
+.p-accordion_panel {
+  height: 0;
+  transition-property: height;
+}
