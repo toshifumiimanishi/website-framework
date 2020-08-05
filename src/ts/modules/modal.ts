@@ -1,25 +1,25 @@
 export const modal = () => {
-  const toggleButton = document.querySelectorAll<HTMLElement>('.js-toggle-modal');
+  const toggleButtons = document.querySelectorAll<HTMLElement>('.js-toggle-modal');
   let currentScrollY = 0;
 
-  toggleButton.forEach((element) => {
+  Array.from(toggleButtons, (element) => {
     if (!element.dataset.target) {
       throw new Error('データ属性 `data-target` を指定してください。');
     }
-    
+
     const target = document.querySelector(element.dataset.target) as HTMLElement;
     const dialog = target.querySelector('[role="document"]');
-    const dismissButton = target.querySelectorAll('[data-dismiss="modal"]');
+    const dismissButtons = target.querySelectorAll('[data-dismiss="modal"]');
 
     if (!dialog) {
       throw new Error('role 属性 `role="document"` を指定してください。');
     }
-    
+
     element.addEventListener('click', () => {
       _launch(target);
     });
 
-    dismissButton.forEach((element) => {
+    Array.from(dismissButtons, (element) => {
       element.addEventListener('click', () => {
         _dismiss(target);
       });
