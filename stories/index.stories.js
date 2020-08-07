@@ -110,14 +110,16 @@ export const loader = () => {
 
 export const modal = () => {
   const element = `
-    <button class="js-toggle-modal" data-target=".modal-01" type="button">Launch modal</button>
-    <div class="p-modal -overlay modal-01" role="dialog" aria-hidden="false">
+    <button class="js-modal" data-target=".modal-01" type="button">Launch modal</button>
+    <div class="p-modal -overlay modal-01" role="dialog" aria-hidden="true" tabindex="-1">
       <div class="p-modal_container">
         <div class="p-modal_contents" role="document">
           <div class="p-modal_content">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet necessitatibus, rem quae sint cupiditate
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet necessitatibus, rem quae sint cupiditate
               qui reprehenderit nostrum hic repellendus cum quia corporis rerum fugit! Natus illum eius odio maiores
-              vero.</p>
+              vero.
+            </p>
             <button class="p-modal_btn p-btn" type="button" data-dismiss="modal" aria-label="close">Dismiss</button>
             <button class="p-modal_btn -floating" type="button" data-dismiss="modal" aria-label="dismiss">×</button>
           </div>
