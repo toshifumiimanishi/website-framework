@@ -5,7 +5,7 @@ export default {
   title: 'Components',
 };
 
-export const accordio = () => {
+export const accordion = () => {
   const elements = `
     <div class="p-accordion js-according">
       <button class="p-accordion_btn js-accordion-btn" type="button" aria-expanded="false" aria-controls="collapse-example">Accordion example</button>
@@ -35,31 +35,6 @@ export const button = () => {
   return elements;
 };
 
-export const iconButton = () => {
-  const elements = `
-    <a class="p-iconbtn" href="">
-      <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
-      </svg>
-    </a>
-    <button class="p-iconbtn" type="button">
-      <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
-      </svg>
-    </button>
-  `;
-  return elements;
-};
-
-export const ghostButton = () => {
-  const elements = `
-    <a class="p-ghostbtn" href="">Default</a>
-    <a class="p-ghostbtn -primary" href="">Primary</a>
-    <button class="p-ghostbtn" type="button" disabled>Disabled</button>
-  `;
-  return elements;
-};
-
 export const card = () => {
   const element =`
   <div class="p-card">
@@ -80,6 +55,29 @@ card.story = {
   }
 }
 
+export const drawer = () => {
+  const element = `
+    <button class="p-drawer js-drawer" type="button" aria-controls="drawer" aria-expanded="false">CLICK ME</button>
+    <div class="p-drawer" id="drawer" aria-hidden="true">
+      <div class="p-drawer_backdrop js-drawer-dismiss"></div>
+      <nav class="p-drawer_nav">
+        <ul class="p-drawer_list">
+          <li class="p-drawer_item"><a aria-current="page">Home</a></li>
+          <li class="p-drawer_item"><a href="">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  `;
+  return element;
+};
+
+export const dropcap = () => {
+  const element = `
+    <p class="c-dropcap">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+  `;
+  return element;
+};
+
 export const form = () => {
   const element = `
     <div class="p-floatlabel">
@@ -92,11 +90,29 @@ export const form = () => {
   return element;
 };
 
-export const spinner = () => {
-  const element = `
-    <div class="c-spinner" aria-busy="true"></div>
+export const ghostButton = () => {
+  const elements = `
+    <a class="p-ghostbtn" href="">Default</a>
+    <a class="p-ghostbtn -primary" href="">Primary</a>
+    <button class="p-ghostbtn" type="button" disabled>Disabled</button>
   `;
-  return element;
+  return elements;
+};
+
+export const iconButton = () => {
+  const elements = `
+    <a class="p-iconbtn" href="">
+      <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+      </svg>
+    </a>
+    <button class="p-iconbtn" type="button">
+      <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+      </svg>
+    </button>
+  `;
+  return elements;
 };
 
 export const loader = () => {
@@ -104,6 +120,13 @@ export const loader = () => {
     <div class="p-loader js-loader" data-target=".p-loader_spinner" aria-hidden="false">
       <div class="c-spinner p-loader_spinner" aria-busy="true"><span class="visually-hidden">Loading...</span></div>
     </div>
+  `;
+  return element;
+};
+
+export const marker = () => {
+  const element = `
+    <p><strong class="c-marker">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</strong></p>
   `;
   return element;
 };
@@ -136,18 +159,9 @@ modal.story = {
   }
 }
 
-export const drawer = () => {
+export const spinner = () => {
   const element = `
-    <button class="p-drawer js-drawer" type="button" aria-controls="drawer" aria-expanded="false">CLICK ME</button>
-    <div class="p-drawer" id="drawer" aria-hidden="true">
-      <div class="p-drawer_backdrop js-drawer-dismiss"></div>
-      <nav class="p-drawer_nav">
-        <ul class="p-drawer_list">
-          <li class="p-drawer_item"><a aria-current="page">Home</a></li>
-          <li class="p-drawer_item"><a href="">Settings</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="c-spinner" aria-busy="true"></div>
   `;
   return element;
 };

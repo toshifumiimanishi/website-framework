@@ -61,7 +61,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$color-black: #333 !default;
+$color-black: #000 !default;
 $color-red: #d24d57 !default;
 $color-blue: #007bff !default;
 
@@ -82,6 +82,15 @@ $btn-line-height: 1.4 !default;
 $btn-disabled-background-color: $gray-400 !default;
 $btn-disabled-color: $color-white !default;
 
+// Drawer
+$drawer-background-color: $color-black !default;
+$drawer-backdrop-background-color: $color-black !default;
+$drawer-color: $color-white !default;
+
+// Float Label
+$floatlabel-placeholder-color: $gray-600 !default;
+$floatlabel-textfield-padding: 16px 20px 0 !default;
+
 // Ghost Button
 $ghostbtn-border-width: 2px !default;
 $ghostbtn-color: $color-white !default;
@@ -96,18 +105,11 @@ $ghostbtn-primary-hover-color: $color-white !default;
 // Icon Button
 $iconbtn-padding: 0.5em !default;
 
-// Float Label
-$floatlabel-placeholder-color: $gray-600 !default;
-$floatlabel-textfield-padding: 16px 20px 0 !default;
-
-// Spinner
-$spinner-size: 40px;
-$spinner-border-width: 4px;
-$spinner-border-color: $color-red !default;
-$spinner-animation-duration: 1s !default;
-
 // Loader
 $loader-backdrop-background-color: $color-black !default;
+
+// Marker
+$marker-background-color: $color-red;
 
 // Modal
 $modal-offset-x: 20px;
@@ -115,7 +117,8 @@ $modal-offset-top: 64px;
 $modal-dialog-background-color: $color-white !default;
 $modal-backdrop-background-color: $color-black !default;
 
-// Drawer
-$drawer-background-color: $color-black !default;
-$drawer-backdrop-background-color: $color-black !default;
-$drawer-color: $color-white !default;
+// Spinner
+$spinner-size: 40px;
+$spinner-border-width: 4px;
+$spinner-border-color: $color-red !default;
+$spinner-animation-duration: 1s !default;

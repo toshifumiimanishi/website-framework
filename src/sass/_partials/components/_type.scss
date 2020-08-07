@@ -1,0 +1,17 @@
+@use "../api" as *;
+
+.c-dropcap {
+  &:first-letter {
+    margin: 0.25em 0.25em 0 0;
+    float: left;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+  }
+}
+
+.c-marker {
+  background: linear-gradient($marker-background-color, $marker-background-color) no-repeat;
+  background-size: 100% 0.4375em;
+  background-position: 0 100%;
+}
