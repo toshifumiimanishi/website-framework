@@ -15,3 +15,18 @@
   background-size: 100% 0.4375em;
   background-position: 0 100%;
 }
+
+.c-ellipsis {
+  overflow: hidden;
+
+  &:not(.-multiline) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &.-multiline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
